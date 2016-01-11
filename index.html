@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Demo</title>
+  <script src="/node_modules/systemjs/dist/system.src.js"></script>
+  <script src="/node_modules/angular2/bundles/angular2.js"></script>
+  <script src="/node_modules/angular2/bundles/router.js"></script>
+  <script src="/node_modules/reflect-metadata/reflect.js"></script>
+  <script>
+    System.config({
+      packages: {'app': {defaultExtension: 'js'}},
+      paths: {
+        '*': './node_modules/*'
+      },
+      packageConfigPaths: ['./package.json','./node_modules/*/package.json']
+    });
+    System.import('/app');
+  </script>
+  <base href="/">
+</head>
+<body>
+  <div>Hello World from index!</div>
+  <div style="padding-left:10px;">
+    <app></app>
+  </div>
+</body>
+</html>
