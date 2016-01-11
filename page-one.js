@@ -22,7 +22,7 @@ System.register(["angular2/core"], function(exports_1) {
                 PageOneComponent = __decorate([
                     core_1.Component({
                         selector: 'page-one',
-                        template: "<div>Hello world from the page 1 component!</div>"
+                        template: "<div>Hello world from the page {{0+1}} component!</div>"
                     }), 
                     __metadata('design:paramtypes', [])
                 ], PageOneComponent);
